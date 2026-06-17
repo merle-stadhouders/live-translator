@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Translator — Two-Way Voice Conversation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>🗣️ Live Translator</h1>
+      <p class="subtitle">
+        A two-way voice translator. Each person speaks their own language — the
+        other hears it translated out loud, powered by <strong>ElevenLabs</strong>.
+      </p>
+
+      <div class="people">
+        <!-- Person A -->
+        <div class="person person-a">
+          <h2>🟦 Person A</h2>
+          <label>
+            Speaks
+            <select id="langA" class="lang-select"></select>
+          </label>
+          <label>
+            Voice
+            <select id="voiceA" class="voice-select">
+              <option value="">Loading…</option>
+            </select>
+          </label>
+          <button id="recordA" class="record-btn">🎤 Person A speaks</button>
+        </div>
+
+        <!-- Person B -->
+        <div class="person person-b">
+          <h2>🟥 Person B</h2>
+          <label>
+            Speaks
+            <select id="langB" class="lang-select"></select>
+          </label>
+          <label>
+            Voice
+            <select id="voiceB" class="voice-select">
+              <option value="">Loading…</option>
+            </select>
+          </label>
+          <button id="recordB" class="record-btn">🎤 Person B speaks</button>
+        </div>
+      </div>
+
+      <p id="status" class="status">
+        Pick each person's language, then press their button to talk.
+      </p>
+
+      <!-- The conversation builds up here, newest message on top -->
+      <section id="conversation" class="conversation"></section>
+
+      <!-- Hidden helper that plays the translated audio -->
+      <audio id="audio" controls></audio>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

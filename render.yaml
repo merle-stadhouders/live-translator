@@ -1,0 +1,15 @@
+# This file lets Render deploy the app automatically.
+# On render.com: New +  ->  Blueprint  ->  connect this repo  ->  it reads this file.
+# You'll be asked to paste your two API keys (they are kept secret).
+services:
+  - type: web
+    name: live-translator
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: ELEVENLABS_API_KEY
+        sync: false # you enter this in the Render dashboard
+      - key: ANTHROPIC_API_KEY
+        sync: false # you enter this in the Render dashboard
