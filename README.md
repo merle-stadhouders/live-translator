@@ -137,42 +137,6 @@ in a couple of clicks:
 
 ---
 
-## 🎬 Recording a demo video
-
-A short clip in the README makes a big difference:
-
-1. **Mac:** press `Cmd + Shift + 5` to record your screen (capture system audio so
-   the voice plays). **Windows:** use the Xbox Game Bar (`Win + G`).
-2. Record yourself speaking a sentence and hearing the translation (30–60s).
-3. Convert it to a GIF or upload the video, then embed it near the top of this
-   README.
-
----
-
-## 🔒 A note on safety
-
-Your API keys live only in the `.env` file (locally) or in Render's secret
-settings (when deployed). The `.gitignore` keeps `.env` out of git, so your keys
-are never committed. **Never** paste your keys directly into the code.
-
----
-
-## 📁 Project structure
-
-```
-live-translator/
-├── server.js          # Backend: STT → translate → TTS pipeline
-├── public/
-│   ├── index.html     # The web page
-│   ├── style.css      # Styling
-│   └── app.js         # Browser code: record mic, call server, play audio
-├── .env.example       # Template for your API keys
-├── render.yaml        # One-click deploy config for Render
-└── package.json       # Project info + dependencies
-```
-
----
-
 ## 💡 Ideas to extend it
 
 - Show the **detected source language** (Scribe returns it as `language_code`).
