@@ -4,13 +4,7 @@ Speak into your browser in one language and hear it spoken back in another, in a
 natural-sounding voice. Built to showcase **ElevenLabs' multilingual
 Speech-to-Text and Text-to-Speech** APIs.
 
-> **Live demo:** _add your deployed link here once you've deployed (see step 6)_
->
-> **Demo video:** _add a 30–60s screen recording here (see "Recording a demo")_
-
-<!-- Once you record a demo, replace the line above with something like:
-![Demo](docs/demo.gif)
--->
+![Live Translator screenshot](docs/screenshot.png)
 
 ---
 
