@@ -117,26 +117,6 @@ language and a voice, and start talking. 🎉
 
 ---
 
-## ☁️ 6. Deploy it for free (so you get a public link)
-
-This repo includes a `render.yaml`, so [Render](https://render.com) can deploy it
-in a couple of clicks:
-
-1. Push this project to a **GitHub repository**.
-2. On [render.com](https://render.com): **New +** → **Blueprint** → connect your
-   repo.
-3. Render reads `render.yaml` and asks for your two keys
-   (`ELEVENLABS_API_KEY` and `ANTHROPIC_API_KEY`) — paste them in. They stay
-   secret.
-4. Click **Apply**. After it builds, you get a public URL like
-   `https://live-translator.onrender.com`.
-5. Put that URL at the top of this README (the "Live demo" line).
-
-> 💡 The free Render tier sleeps after inactivity, so the first request after a
-> while can take ~30 seconds to wake up. That's normal.
-
----
-
 ## 💡 Ideas to extend it
 
 - Show the **detected source language** (Scribe returns it as `language_code`).
