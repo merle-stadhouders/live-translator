@@ -1,7 +1,7 @@
 # 🗣️ Live Translator — Multilingual Voice Assistant
 
 Speak into your browser in one language and hear it spoken back in another, in a
-natural-sounding voice. Built to showcase **ElevenLabs' multilingual
+natural-sounding voice, with **ElevenLabs' multilingual
 Speech-to-Text and Text-to-Speech** APIs.
 
 ![Live Translator screenshot](docs/screenshot.png)
